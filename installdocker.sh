@@ -2,9 +2,11 @@
 sudo yum install -y vim nano tar screen nmap ca-certificates net-tools telnet git
 
 echo "192.168.10.25 master.com
-192.168.10.26 worker1.com
-192.168.10.27 worker2.com
-192.168.10.28 wroker3.com" | sudo tee --append /etc/hosts
+192.168.10.26 namenode
+192.168.10.27 datanode
+192.168.10.28 resourcemanager
+192.168.10.29 nodemanager1
+192.168.10.30 historyserver" | sudo tee --append /etc/hosts
 
 sudo hostnamectl set-hostname $1
 sudo curl -sSL https://get.docker.com/ | sh

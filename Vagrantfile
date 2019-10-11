@@ -7,20 +7,30 @@ builds = {
     memory: "1024",
     hostname: "master.com"
   },
-  'worker1.com' => {
+  'namenode' => {
     ip: "192.168.10.26",
     memory: "1024",
-    hostname: "worker1.com"
+    hostname: "namenode"
   },
-  'worker2.com' => {
+  'datanode' => {
     ip: "192.168.10.27",
     memory: "1024",
-    hostname: "worker2.com"
+    hostname: "datanode"
   },
-  'worker3.com' => {
+  'resourcemanager' => {
     ip: "192.168.10.28",
     memory: "1024",
-    hostname: "worker3.com"
+    hostname: "resourcemanager"
+  },
+  'nodemanager1' => {
+    ip: "192.168.10.29",
+    memory: "1024",
+    hostname: "nodemanager1"
+  },
+  'historyserver' => {
+    ip: "192.168.10.30",
+    memory: "1024",
+    hostname: "historyserver"
   }
 }
 
